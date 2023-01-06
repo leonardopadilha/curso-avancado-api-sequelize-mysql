@@ -141,6 +141,7 @@ class PessoaController {
     }
   }
 
+  // Consulta apenas por matrículas confirmadas
   static async pegaMatricula(req, res) {
     const { estudanteId } = req.params
     try {
