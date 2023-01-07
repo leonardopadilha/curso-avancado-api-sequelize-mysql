@@ -8,6 +8,7 @@ class TurmaController {
     const where = {}
 
     data_inicial || data_final ? where.data_inicio = {} : null
+    
     data_inicial ? where.data_inicio[Op.gte] = data_inicial : null
     data_final ? where.data_inicio[Op.lte] = data_final : null
 
