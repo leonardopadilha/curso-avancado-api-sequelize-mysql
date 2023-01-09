@@ -3,7 +3,7 @@ const Sequelize = require('sequelize')
 const Op = Sequelize.Op
 
 class TurmaController {
-  static async pegaTodasAsTurmas(req, res) {
+  static async pegaTodasAsTurmas(req, res) { //Permite a possibilidade de realizar query por data
     const { data_inicial, data_final } = req.query
     const where = {}
 
